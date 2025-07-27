@@ -20,7 +20,7 @@ function updateDropdown() {
 
   if (input.length === 0) return;
 
-  const matches = guestList.filter(g => g.name.toLowerCase().startsWith(input));
+  const matches = guestList.filter(g => g.name.toLowerCase().includes(input));
 
   matches.forEach(g => {
     const item = document.createElement("div");
@@ -29,20 +29,8 @@ function updateDropdown() {
     item.onclick = () => {
       document.getElementById("nameInput").value = g.name;
       dropdown.innerHTML = "";
+      document.getElementById("result").textContent = `${g.name}, your table number is ${g.table}.`;
     };
     dropdown.appendChild(item);
   });
-}
-
-function findTable() {
-  const name = document.getElementById("nameInput").value.trim().toLowerCase();
-  const result = document.getElementById("result");
-
-  const found = guestList.find(g => g.name.toLowerCase() === name);
-
-  if (found) {
-    result.textContent = `${found.name}, your table number is ${found.table}.`;
-  } else {
-    result.textContent = "Name not found. Please check spelling.";
-  }
 }
