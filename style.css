@@ -1,7 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #fdf6f0;
+  background: url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
   padding: 50px;
 }
 h1 {
@@ -29,7 +30,6 @@ button:hover {
   font-size: 18px;
   font-weight: bold;
 }
-
 #dropdown {
   position: relative;
   margin: 0 auto;
@@ -40,12 +40,10 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 .dropdown-item {
   padding: 8px;
   cursor: pointer;
 }
-
 .dropdown-item:hover {
   background-color: #f0f0f0;
 }
