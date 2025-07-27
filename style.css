@@ -38,3 +38,18 @@ input { width: 90%; padding: 10px; font-size: 16px; border-radius: 20px; border:
 .dropdown-item:hover { background: #f0f0f0; }
 .result-text { font-size: 18px; margin-top: 20px; }
 .result-text strong { display: block; font-family: 'Playfair Display', serif; font-size: 26px; margin: 10px 0; color: #ffd966; }
+
+
+.result-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+  animation: bounce 1s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-15px); }
+  60% { transform: translateY(-8px); }
+}
