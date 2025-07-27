@@ -4,7 +4,7 @@ let guestList = [];
 fetch('guestlist.csv')
   .then(response => response.text())
   .then(data => {
-    const rows = data.split('\n').slice(1); // skip header
+    const rows = data.split('\n').slice(1);
     rows.forEach(row => {
       const [table, name] = row.split(',');
       if (table && name) {

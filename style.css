@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -6,12 +7,13 @@ body {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  align-items: flex-start;
+  min-height: 100vh;
 }
 
 .card {
-  background: rgba(0, 0, 0, 0.6);
+  margin-top: 80px;
+  background: none;
   color: white;
   padding: 30px;
   border-radius: 12px;
@@ -20,73 +22,19 @@ body {
   text-align: center;
 }
 
-.title {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  margin-bottom: 5px;
-}
-
-.date {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #ddd;
-}
-
-.find-text {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-input {
-  width: 90%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 20px;
-  border: none;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-#dropdown {
-  width: 90%;
-  margin: 0 auto;
-  max-height: 150px;
-  overflow-y: auto;
-  background: white;
-  border-radius: 8px;
-  color: black;
-}
-
-.dropdown-item {
-  padding: 8px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.dropdown-item:hover {
-  background: #f0f0f0;
-}
-
-.result-text {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-.result-text strong {
-  display: block;
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  margin: 10px 0;
-  color: #ffd966;
-}
-
-
 .result-box {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px;
   margin-top: 15px;
   border-radius: 10px;
 }
-.card {
-  background: none; /* remove dark background for input card */
-}
+
+.title { font-family: 'Playfair Display', serif; font-size: 28px; margin-bottom: 5px; }
+.date { font-size: 16px; margin-bottom: 20px; color: #ddd; }
+.find-text { font-size: 20px; margin-bottom: 10px; }
+input { width: 90%; padding: 10px; font-size: 16px; border-radius: 20px; border: none; margin-bottom: 10px; text-align: center; }
+#dropdown { width: 90%; margin: 0 auto; max-height: 150px; overflow-y: auto; background: white; border-radius: 8px; color: black; }
+.dropdown-item { padding: 8px; cursor: pointer; text-align: center; }
+.dropdown-item:hover { background: #f0f0f0; }
+.result-text { font-size: 18px; margin-top: 20px; }
+.result-text strong { display: block; font-family: 'Playfair Display', serif; font-size: 26px; margin: 10px 0; color: #ffd966; }
