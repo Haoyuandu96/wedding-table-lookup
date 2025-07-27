@@ -30,7 +30,12 @@ function updateDropdown() {
       document.getElementById("nameInput").value = g.name;
       dropdown.innerHTML = "";
       document.getElementById("result").innerHTML =
-        `<div><strong>${g.name}</strong>You're seated at<br><strong>Table ${g.table}</strong><br><em>Our happily ever after wouldn’t be the same without you! 🎉</em></div>`;
+        `<div class="result-box">
+          <strong>${g.name}</strong><br>
+          You're seated at<br>
+          <strong>Table ${g.table}</strong><br>
+          <em>Our happily ever after wouldn’t be the same without you! 🎉</em>
+        </div>`;
     };
     dropdown.appendChild(item);
   });

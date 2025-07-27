@@ -79,3 +79,14 @@ input {
   margin: 10px 0;
   color: #ffd966;
 }
+
+
+.result-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.card {
+  background: none; /* remove dark background for input card */
+}
