@@ -29,7 +29,8 @@ function updateDropdown() {
     item.onclick = () => {
       document.getElementById("nameInput").value = g.name;
       dropdown.innerHTML = "";
-      document.getElementById("result").textContent = `${g.name}, your table number is ${g.table}.`;
+      document.getElementById("result").innerHTML =
+        `<div><strong>${g.name}</strong>You're seated at<br><strong>Table ${g.table}</strong><br><em>Our happily ever after wouldn’t be the same without you! 🎉</em></div>`;
     };
     dropdown.appendChild(item);
   });

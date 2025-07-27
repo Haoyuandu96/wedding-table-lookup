@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wedding Table Lookup</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Find Your Table</h1>
-  <p>Enter your name exactly as it appears on the guest list.</p>
-  <input type="text" id="nameInput" placeholder="Enter your name" onkeyup="updateDropdown()" />
-  <div id="dropdown"></div>
-  <button onclick="findTable()">Search</button>
-  <p id="result"></p>
-
+  <div class="card">
+    <h1 class="title">Haoyuan & Darya</h1>
+    <p class="date">August 23, 2025</p>
+    <h2 class="find-text">Find Your Table</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name" onkeyup="updateDropdown()" />
+    <div id="dropdown"></div>
+    <p id="result" class="result-text"></p>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>

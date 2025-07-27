@@ -1,49 +1,81 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
   background: url('background.jpg') no-repeat center center fixed;
   background-size: cover;
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-h1 {
-  color: #b76e79;
+
+.card {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 350px;
+  width: 90%;
+  text-align: center;
 }
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.find-text {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 input {
+  width: 90%;
   padding: 10px;
   font-size: 16px;
-  margin: 10px;
-}
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background: #b76e79;
-  color: white;
+  border-radius: 20px;
   border: none;
-  cursor: pointer;
-  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
 }
-button:hover {
-  background: #9d5a64;
-}
-#result {
-  margin-top: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
+
 #dropdown {
-  position: relative;
+  width: 90%;
   margin: 0 auto;
-  width: 300px;
-  max-height: 200px;
+  max-height: 150px;
   overflow-y: auto;
   background: white;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
+  color: black;
 }
+
 .dropdown-item {
   padding: 8px;
   cursor: pointer;
+  text-align: center;
 }
+
 .dropdown-item:hover {
-  background-color: #f0f0f0;
+  background: #f0f0f0;
+}
+
+.result-text {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.result-text strong {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin: 10px 0;
+  color: #ffd966;
 }
