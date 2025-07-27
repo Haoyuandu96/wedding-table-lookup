@@ -9,7 +9,8 @@
 <body>
   <h1>Find Your Table</h1>
   <p>Enter your name exactly as it appears on the guest list.</p>
-  <input type="text" id="nameInput" placeholder="Enter your name" />
+  <input type="text" id="nameInput" placeholder="Enter your name" onkeyup="updateDropdown()" />
+  <div id="dropdown"></div>
   <button onclick="findTable()">Search</button>
   <p id="result"></p>
 
