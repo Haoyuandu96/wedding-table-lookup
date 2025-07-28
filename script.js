@@ -1,4 +1,3 @@
-
 let guestList = [];
 
 fetch('guestlist.csv')
@@ -36,6 +35,7 @@ function updateDropdown() {
           <strong>Table ${g.table}</strong><br>
           <em>Our happily ever after wouldn’t be the same without you! 🎉</em>
         </div>`;
+      document.getElementById("gift-card").style.display = "block";
     };
     dropdown.appendChild(item);
   });
