@@ -10,36 +10,45 @@
       background: #fff;
       padding: 40px 10px;
     }
-    .pay-card {
-      display: block;
-      width: 250px;
-      margin: 15px auto;
+    .qr-card {
+      display: inline-block;
+      margin: 20px;
       padding: 15px;
-      border-radius: 12px;
-      background: #ff6f61;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: transform 0.2s;
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    .pay-card:hover {
-      transform: scale(1.05);
-      background: #ff4d40;
+    img {
+      width: 220px;
+      border-radius: 10px;
+    }
+    a {
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <h1>💌 Wedding Gift Fund 💌</h1>
-  <p>Thank you for celebrating with us! Choose your preferred payment method below:</p>
+  <p>Thank you for celebrating with us! If you'd like to contribute to our honeymoon or future, here are your options:</p>
 
-  <a class="pay-card" href="https://venmo.com/u/Erichydu" target="_blank">💰 Pay with Venmo</a>
-  <a class="pay-card" href="https://www.paypal.com/ncp/payment/PER6PSC39MQ8Y" target="_blank">💳 Pay with PayPal</a>
+  <div class="qr-card">
+    <h2>Pay with Zelle</h2>
+    <img src="zelle.jpg" alt="Zelle QR">
+    <p style="margin-top:8px;font-size:14px;">Send to: 646-725-6864</p>
+  </div>
 
-  <div class="pay-card" style="cursor:default;">
-    🏦 Pay with Zelle<br>
-    <small style="font-size:14px;display:block;margin-top:5px;">Send to: 646-703-6864</small>
+  <div class="qr-card">
+    <h2>Venmo</h2>
+    <a href="https://venmo.com/u/Erichydu" target="_blank">
+      <img src="venmo.jpg" alt="Venmo QR">
+    </a>
+  </div>
+
+  <div class="qr-card">
+    <h2>PayPal</h2>
+    <a href="https://www.paypal.com/ncp/payment/PER6PSC39MQ8Y" target="_blank">
+      <img src="paypal.jpg" alt="PayPal QR">
+    </a>
   </div>
 
   <br><br>
