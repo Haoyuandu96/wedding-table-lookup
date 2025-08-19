@@ -1,3 +1,12 @@
+// ===== Upload Photos link config =====
+const UPLOAD_URL = "https://haoyuandu96.github.io/wedding-uploads/"; // <-- set this to your upload page URL
+document.addEventListener("DOMContentLoaded", () => {
+  const upLink = document.getElementById("upload-link");
+  if (upLink && UPLOAD_URL && UPLOAD_URL !== "YOUR_UPLOAD_SITE_URL_HERE") {
+    upLink.href = UPLOAD_URL;
+  }
+});
+// =====================================
 let guestList = [];
 
 fetch('guestlist.csv')
@@ -36,6 +45,7 @@ function updateDropdown() {
           <em>Our happily ever after wouldn’t be the same without you! 🎉</em>
         </div>`;
       document.getElementById("gift-card").style.display = "block";
+        document.getElementById("upload-card").style.display = "block";
     };
     dropdown.appendChild(item);
   });
