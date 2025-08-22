@@ -44,8 +44,13 @@ function updateDropdown() {
           <strong>Table ${g.table}</strong><br>
           <em>Our happily ever after wouldn’t be the same without you! 🎉</em>
         </div>`;
-      document.getElementById("gift-card").style.display = "block";
-        document.getElementById("upload-card").style.display = "block";
+      // Show the cards after a guest is selected
+      const gift = document.getElementById("gift-card");
+      const upload = document.getElementById("upload-card");
+      const voicemail = document.getElementById("voicemail-card");
+      if (gift) gift.style.display = "block";
+      if (upload) upload.style.display = "block";
+      if (voicemail) voicemail.style.display = "block";
     };
     dropdown.appendChild(item);
   });
