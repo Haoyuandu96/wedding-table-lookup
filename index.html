@@ -1,70 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wedding Table Lookup</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eric & Darya’s Wedding</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      margin: 0;
+      background: #000 url('background.jpg') center/cover no-repeat fixed;
+      color: #fff;
+    }
+    .wrap {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(0,0,0,.55);
+      border-radius: 18px;
+      padding: 24px;
+      margin: 20px 0;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 8px 28px rgba(0,0,0,.25);
+      text-align: center;
+    }
+    .card h3 { margin-top: 0; }
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      background: #2b2b2b;
+      color: #fff;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.1);
+    }
+    .btn:hover { filter: brightness(1.1); }
+    .btn-green { background: #16a34a; }
+    .btn-red { background: #b91c1c; }
+  </style>
 </head>
 <body>
-  <div class="card">
-    <h1 class="title">Haoyuan & Darya</h1>
-    <p class="date">August 23, 2025</p>
-    <h2 class="find-text">Find Your Table</h2>
-    <input type="text" id="nameInput" placeholder="Enter your name" onkeyup="updateDropdown()" />
-    <div id="dropdown"></div>
-    <p id="result" class="result-text"></p>
+  <div class="wrap">
 
-    <!-- Updated Gift Fund Card -->
-    <!-- Upload Photos Card (shown after a guest is selected) -->
-<div id="upload-card" style="display:none; margin-top:16px; text-align:center;">
-  <div style="
-    background: rgba(0,0,0,0.6);
-    border-radius: 15px;
-    padding: 20px;
-    width: 260px;
-    margin: auto;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-    <h3 style="color:#ffd966; margin-bottom:8px;">📸 Share Wedding Photos</h3>
-    <p style="color:white; font-size:15px; margin-bottom:15px;">
-      Upload your favorite shots from today!
-    </p>
-    <a id="upload-link" href="https://haoyuandu96.github.io/wedding-uploads/" target="_blank"
-       style="display:inline-block; padding:10px 18px; background:#10b981;
-              color:#fff; font-weight:bold; text-decoration:none; border-radius:8px;
-              box-shadow:0 3px 6px rgba(0,0,0,0.3);">
-      Upload Photos
-    </a>
+    <!-- Table Finder Placeholder -->
+    <section class="card">
+      <h3>Find Your Table</h3>
+      <input type="text" placeholder="Enter your name" style="width:80%;padding:10px;border-radius:8px;border:none;text-align:center;">
+    </section>
+
+    <!-- Photos Card -->
+    <section class="card">
+      <h3>📸 Share Wedding Photos</h3>
+      <p>Upload your favorite shots from today!</p>
+      <a class="btn btn-green" href="./upload.html">Upload Photos</a>
+    </section>
+
+    <!-- Voicemail Card (NEW, above Gift Fund) -->
+    <section id="voicemail-card" class="card">
+      <h3>🎙️ Voicemail Guestbook</h3>
+      <p>Leave us a special voice message to remember forever.</p>
+      <a href="./voicemail.html" class="btn">Record a Voicemail</a>
+    </section>
+
+    <!-- Gift Fund Card -->
+    <section class="card">
+      <h3>❤️ Wedding Gift Fund ❤️</h3>
+      <p>Want to send us love online?</p>
+      <a class="btn btn-red" href="./gift.html">Fund Our Future</a>
+    </section>
+
   </div>
-</div>
-
-<div id="gift-card" style="display:none; margin-top: 20px; text-align:center;">
-      <div style="
-        background: rgba(0, 0, 0, 0.6); 
-        border-radius: 15px; 
-        padding: 20px; 
-        width: 260px; 
-        margin: auto; 
-        box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-
-        <h3 style="color: #ffd966; margin-bottom: 8px;">❤️ Wedding Gift Fund ❤️</h3>
-        <p style="color: white; font-size: 15px; margin-bottom: 15px;">Want to send us love online?</p>
-
-        <a href="gift.html" style="
-          display:inline-block; 
-          padding: 10px 18px; 
-          background: #ff6f61; 
-          color: white; 
-          font-weight: bold; 
-          text-decoration: none; 
-          border-radius: 8px;
-          box-shadow: 0 3px 6px rgba(0,0,0,0.3);">
-          💌 Fund Our Future
-        </a>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
 </body>
 </html>
